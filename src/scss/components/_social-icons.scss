@@ -23,6 +23,8 @@
         }
         &:focus {
           outline-color: var(--theme-color);
+          transform: translateY(-4px);
+          color: var(--theme-color);
         }
       }
       &:hover {

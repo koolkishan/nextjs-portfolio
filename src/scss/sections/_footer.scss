@@ -1,0 +1,41 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+  min-height: 70px;
+  .footer-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--theme-color);
+    outline: 2px dashed transparent;
+    transition: 0.3s ease-in-out;
+    padding: 10px;
+    font-size: smaller;
+    &:focus {
+      outline-color: var(--theme-color);
+    }
+    .footer-info {
+      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    }
+    .footer-git {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      gap: 1rem;
+      &-item {
+        display: flex;
+        gap: 0.3rem;
+        &-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &-text {
+        }
+      }
+    }
+  }
+}
