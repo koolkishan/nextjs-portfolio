@@ -1,0 +1,16 @@
+:root {
+  --background-color: #0a192f;
+  --lightest-slate: #a8b2d1;
+  --light-slate: #a8b2d1;
+  --theme-color: #64ffda;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
