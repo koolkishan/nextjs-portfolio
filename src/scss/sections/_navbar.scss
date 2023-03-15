@@ -22,8 +22,14 @@ nav {
       list-style-type: none;
       &-item {
         a {
+          outline: 2px dashed transparent;
+          padding: 10px;
           text-decoration: none;
           color: inherit;
+          transition: 0.3s ease-in-out;
+        }
+        a:focus {
+          outline-color: var(--theme-color);
         }
         &:hover {
           color: var(--theme-color);
