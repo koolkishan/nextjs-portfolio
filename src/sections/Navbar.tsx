@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import Logo from "@/components/Logo";
 import Link from "next/link";
 import React from "react";
 
@@ -14,7 +15,9 @@ function Navbar() {
   ];
   return (
     <nav>
-      <div className="brand">K</div>
+      <div className="brand">
+        <Logo />
+      </div>
       <div className="nav-items">
         <ul className="nav-items-list">
           {sectionLinks.map(({ name, link }) => (
