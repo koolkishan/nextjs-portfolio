@@ -12,6 +12,7 @@ function index() {
     <div className="app">
       <Head>
         <title>Kishan Sheth</title>
+        <link rel="shortcut icon" href="/favicon.png" />
       </Head>
       <SocialIcons />
       <Email />
