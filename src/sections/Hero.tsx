@@ -17,13 +17,6 @@ function Hero() {
         <Link href="https://rapidops.com" target="_blank" className="link">
           Rapidops.
         </Link>
-        &nbsp;Additionally, I share my knowledge and passion with the world
-        through my YouTube channel, where I demonstrate how to build full-stack
-        applications. I am also working on a new project called&nbsp;
-        <Link className="link" target="_blank" href="https://frontendvita.com">
-          FrontendVita,
-        </Link>
-        &nbsp;aimed at enhancing frontend development skills.
       </p>
       <div className="hero-button">
         <Button

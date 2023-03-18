@@ -1,6 +1,6 @@
 .hero {
   margin: 0 15rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -20,7 +20,7 @@
   }
   &-text {
     color: var(--slate);
-    margin-right: 10%;
+    margin-right: 40%;
     font-size: 18px;
     letter-spacing: 0.07rem;
     line-height: 1.6rem;
