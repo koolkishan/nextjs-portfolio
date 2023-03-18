@@ -13,6 +13,10 @@ nav {
     width: 3rem;
     fill: none;
     margin: 2rem 0;
+    cursor: pointer;
+    &:hover {
+      fill: #64fad91a;
+    }
   }
   .nav-items {
     display: flex;
