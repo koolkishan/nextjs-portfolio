@@ -13,12 +13,12 @@ footer {
     outline: 2px dashed transparent;
     transition: 0.3s ease-in-out;
     padding: 10px;
-    font-size: smaller;
+    font-size: 14px;
     &:focus {
       outline-color: var(--theme-color);
     }
     .footer-info {
-      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+      font-family: var(--fira-code);
     }
     .footer-git {
       display: flex;
