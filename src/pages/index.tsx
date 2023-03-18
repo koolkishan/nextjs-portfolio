@@ -6,6 +6,7 @@ import Footer from "@/sections/Footer";
 import Hero from "@/sections/Hero";
 import Navbar from "@/sections/Navbar";
 import React from "react";
+import About from "@/sections/About";
 
 function index() {
   return (
@@ -14,10 +15,11 @@ function index() {
         <title>Kishan Sheth</title>
         <link rel="shortcut icon" href="/favicon.png" />
       </Head>
+      <Navbar />
       <SocialIcons />
       <Email />
-      <Navbar />
       <Hero />
+      <About />
       <Footer />
       <Loader />
     </div>
