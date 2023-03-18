@@ -5,25 +5,34 @@ nav {
   align-items: center;
   padding: 0 4rem;
   .brand {
-    color: var(--theme-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3rem;
-    width: 3rem;
-    fill: none;
-    margin: 2rem 0;
-    cursor: pointer;
-    &:hover {
-      fill: #64fad91a;
+    a {
+      color: var(--theme-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      width: 3rem;
+      fill: none;
+      margin: 2rem 0;
+      cursor: pointer;
+      outline: 2px dashed transparent;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        fill: #64fad91a;
+      }
+      &:focus {
+        outline-color: var(--theme-color);
+        fill: #64fad91a;
+      }
     }
   }
   .nav-items {
     display: flex;
     gap: 3em;
     color: var(--lightest-slate);
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-    font-size: 13px;
+    font-family: var(--fira-code);
+    font-weight: 500;
+    font-size: 14px;
     &-list {
       display: flex;
       gap: 3rem;

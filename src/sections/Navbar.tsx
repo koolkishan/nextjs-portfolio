@@ -16,7 +16,9 @@ function Navbar() {
   return (
     <nav>
       <div className="brand">
-        <Logo />
+        <Link href="kishansheth.com">
+          <Logo />
+        </Link>
       </div>
       <div className="nav-items">
         <ul className="nav-items-list">
