@@ -1,10 +1,16 @@
 :root {
   --background-color: #0a192f;
+  --lightest-navy: #233554;
   --dark-slate: #495670;
   --slate: #8892b0;
   --light-slate: #ccd6f6;
   --lightest-slate: #a8b2d1;
   --theme-color: #64ffda;
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
 }
 
 body {
