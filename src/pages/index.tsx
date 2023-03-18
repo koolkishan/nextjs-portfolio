@@ -7,6 +7,7 @@ import Hero from "@/sections/Hero";
 import Navbar from "@/sections/Navbar";
 import React from "react";
 import About from "@/sections/About";
+import Contact from "@/sections/Contact";
 
 function index() {
   return (
@@ -20,6 +21,7 @@ function index() {
       <Email />
       <Hero />
       <About />
+      <Contact />
       <Footer />
       <Loader />
     </div>
