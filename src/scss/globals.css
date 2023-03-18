@@ -1,5 +1,6 @@
 :root {
   --background-color: #0a192f;
+  --dark-slate: #495670;
   --slate: #8892b0;
   --light-slate: #ccd6f6;
   --lightest-slate: #a8b2d1;
@@ -14,4 +15,20 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--background-color);
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 3px solid var(--background-color);
+  border-radius: 10px;
 }
