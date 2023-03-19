@@ -8,6 +8,12 @@
       margin-bottom: 2rem;
       font-size: 2rem;
       font-weight: 700;
+      &::before {
+        counter-increment: title;
+        content: "0" counter(title) ".";
+        margin-right: 0.5rem;
+        color: var(--theme-color);
+      }
       &::after {
         content: "";
         display: block;
@@ -15,7 +21,7 @@
         top: 20px;
         width: 300px;
         height: 2px;
-        margin-left: 180px;
+        margin-left: 220px;
         background-color: var(--lightest-navy);
       }
     }

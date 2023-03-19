@@ -7,8 +7,15 @@
   flex-direction: column;
   .contact-title {
     color: var(--theme-color);
-    font-size: 15px;
+    font-size: 16px;
     font-family: var(--fira-code);
+    font-weight: 300;
+    &::before {
+      counter-increment: title;
+      content: "0" counter(title) ".";
+      margin-right: 0.5rem;
+      color: var(--theme-color);
+    }
   }
   .contact-sub-title {
     font-size: 60px;
