@@ -33,6 +33,7 @@ nav {
     font-family: var(--fira-code);
     font-weight: 500;
     font-size: 14px;
+    counter-reset: nav-list;
     &-list {
       display: flex;
       gap: 3rem;
@@ -44,6 +45,11 @@ nav {
           text-decoration: none;
           color: inherit;
           transition: 0.3s ease-in-out;
+          &::before {
+            counter-increment: nav-list;
+            content: "0" counter(nav-list) ". ";
+            color: var(--theme-color);
+          }
         }
         a:focus {
           outline-color: var(--theme-color);
