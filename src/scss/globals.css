@@ -9,6 +9,16 @@
   --theme-color: #9d00ff;
 }
 
+::-moz-selection {
+  color: white;
+  background: var(--theme-color);
+}
+
+::selection {
+  color: white;
+  background: var(--theme-color);
+}
+
 html,
 body {
   scroll-behavior: smooth !important;
