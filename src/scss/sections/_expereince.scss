@@ -1,0 +1,117 @@
+.experience {
+  margin: 15rem 25rem;
+  .title {
+    font-family: var(--raleway);
+    color: var(--lightest-slate);
+    position: relative;
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      font-weight: 700;
+      &::before {
+        counter-increment: title;
+        content: "0" counter(title) ".";
+        margin-right: 0.5rem;
+        color: var(--theme-color);
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        width: 300px;
+        height: 2px;
+        margin-left: 380px;
+        background-color: var(--lightest-navy);
+      }
+    }
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 1rem;
+    .exp-slider {
+      list-style-type: none;
+      position: relative;
+      height: max-content;
+      .underline {
+        background-color: var(--theme-color);
+        position: absolute;
+        left: -0.5px;
+        top: 0;
+        height: 2.5rem;
+        width: 3px;
+        transition: 0.3s ease-in-out;
+      }
+      &::before {
+        position: absolute;
+        left: -0px;
+        content: "";
+        height: 100%;
+        width: 1px;
+        background-color: var(--lightest-navy);
+      }
+      &-item {
+        height: 2.5rem;
+        padding: 0 1.5rem;
+        display: flex;
+        vertical-align: middle;
+        cursor: pointer;
+        width: 100%;
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--slate);
+          font-family: var(--fira-code);
+          font-size: 14px;
+        }
+        &:hover {
+          background-color: var(--light-navy);
+          span {
+            color: var(--theme-color);
+          }
+        }
+      }
+      &-item-selected {
+        span {
+          color: var(--theme-color);
+        }
+      }
+    }
+    .exp-details {
+      height: 40vh;
+      font-family: var(--raleway);
+      &-position {
+        color: var(--lightest-slate);
+        &-company {
+          color: var(--theme-color);
+        }
+      }
+      &-range {
+        color: var(--light-slate);
+      }
+      &-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding-left: 20px;
+        &-item {
+          position: relative;
+          color: var(--slate);
+          font-weight: 500;
+          &::before {
+            content: "▹";
+            position: absolute;
+            left: -20px;
+            top: 6px;
+            color: var(--theme-color);
+            line-height: 12px;
+          }
+        }
+      }
+    }
+  }
+}
