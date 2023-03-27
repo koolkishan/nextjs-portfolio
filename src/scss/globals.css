@@ -30,6 +30,16 @@ body {
   counter-reset: title;
 }
 
+main {
+  transition: 0.3s ease-in-out;
+}
+
+.blur {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
 * {
   margin: 0;
   padding: 0;

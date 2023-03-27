@@ -32,11 +32,13 @@ function Index() {
           <Navbar />
           <SocialIcons />
           <Email />
-          <Hero />
-          <About />
-          <Experience />
-          <Projects />
-          <Contact />
+          <main>
+            <Hero />
+            <About />
+            <Experience />
+            <Projects />
+            <Contact />
+          </main>
           <Footer />
         </>
       )}
