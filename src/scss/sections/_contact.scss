@@ -1,5 +1,6 @@
 .contact {
-  margin: 15rem;
+  max-width: 700px;
+  margin: 15rem auto;
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -7,7 +8,7 @@
   flex-direction: column;
   .contact-title {
     color: var(--theme-color);
-    font-size: 16px;
+    font-size: var(--tbase);
     font-family: var(--fira-code);
     font-weight: 300;
     &::before {
@@ -18,14 +19,13 @@
     }
   }
   .contact-sub-title {
-    font-size: 60px;
+    font-size: var(--tgiant);
     font-family: var(--raleway);
     color: var(--light-slate);
   }
   .contact-text {
-    margin: 0 10rem;
     color: var(--slate);
-    font-size: 18px;
+    font-size: var(--tlarge);
     letter-spacing: 0.07rem;
     line-height: 1.6rem;
     font-weight: 500;

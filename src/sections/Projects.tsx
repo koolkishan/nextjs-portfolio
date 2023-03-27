@@ -82,13 +82,9 @@ function Projects() {
               <div className="project" key={projectName}>
                 <div className="project-image">
                   <div className="project-image-overlay"></div>
-                  <Image
-                    src={image}
-                    width="600"
-                    height="300"
-                    alt={projectName}
-                    quality={100}
-                  />
+                  <div className="project-image-container">
+                    <Image src={image} fill alt={projectName} quality={100} />
+                  </div>
                 </div>
                 <div className="project-info">
                   <p className="project-info-overline">Featured Project</p>

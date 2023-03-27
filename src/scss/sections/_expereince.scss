@@ -1,12 +1,13 @@
 .experience {
-  margin: 15rem 25rem;
+  margin: 15rem auto;
+  max-width: 700px;
   .title {
     font-family: var(--raleway);
     color: var(--lightest-slate);
     position: relative;
     h2 {
       margin-bottom: 2rem;
-      font-size: 2rem;
+      font-size: var(--tx2large);
       font-weight: 700;
       &::before {
         counter-increment: title;
@@ -64,7 +65,7 @@
           align-items: center;
           color: var(--slate);
           font-family: var(--fira-code);
-          font-size: 14px;
+          font-size: var(--tsm1);
         }
         &:hover {
           background-color: var(--light-navy);
@@ -110,6 +111,43 @@
             color: var(--theme-color);
             line-height: 12px;
           }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 968px) {
+    .title {
+      h2 {
+        &::after {
+          width: 100px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .container {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+      .exp-details {
+        height: max-content;
+      }
+      .exp-slider {
+        display: flex;
+        overflow-x: scroll;
+        &::before {
+          display: none;
+        }
+        .underline {
+          display: none;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .title {
+      h2 {
+        &::after {
+          display: none;
         }
       }
     }

@@ -29,9 +29,7 @@ function Footer() {
         target="_blank"
         className="footer-link"
       >
-        <span className="footer-info">
-          Designed by Brittany Chiang. Built by Kishan Sheth.
-        </span>
+        <span className="footer-info">Designed and Built by Kishan Sheth.</span>
         {githubInfo && (
           <div className="footer-git">
             <div className="footer-git-item">

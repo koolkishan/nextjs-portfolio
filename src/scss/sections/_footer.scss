@@ -13,12 +13,13 @@ footer {
     outline: 2px dashed transparent;
     transition: 0.3s ease-in-out;
     padding: 10px;
-    font-size: 14px;
+    font-size: var(--tsm1);
     &:focus {
       outline-color: var(--theme-color);
     }
     .footer-info {
       font-family: var(--fira-code);
+      text-align: center;
     }
     .footer-git {
       display: flex;
@@ -32,8 +33,6 @@ footer {
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-        &-text {
         }
       }
     }

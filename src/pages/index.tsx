@@ -9,7 +9,6 @@ import React, { useState } from "react";
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
 import Projects from "@/sections/Projects";
-import { AnimatePresence } from "framer-motion";
 import Experience from "@/sections/Experience";
 
 function Index() {

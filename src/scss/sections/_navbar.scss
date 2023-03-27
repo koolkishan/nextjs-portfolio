@@ -1,5 +1,5 @@
 nav {
-  min-height: 100px;
+  min-height: 60px;
   .wrapper {
     width: 100%;
     display: flex;
@@ -33,7 +33,7 @@ nav {
     .nav-responsive-toggle {
       display: none;
       color: var(--theme-color);
-      font-size: 25px;
+      font-size: var(--tlarge2);
       justify-content: center;
       align-items: center;
       transition: 0.3s ease-in-out;
@@ -45,7 +45,7 @@ nav {
       color: var(--lightest-slate);
       font-family: var(--fira-code);
       font-weight: 500;
-      font-size: 14px;
+      font-size: var(--tsm1);
       counter-reset: nav-list;
       &-list {
         display: flex;
@@ -74,7 +74,8 @@ nav {
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1020px) {
+      padding: 0 2rem;
       .nav-responsive-toggle {
         display: flex;
         z-index: 15;
@@ -108,6 +109,7 @@ nav {
     }
   }
   .blur-nav {
+    height: 80px;
     position: fixed;
     top: 0;
     transition: 0.3s ease-in-out;

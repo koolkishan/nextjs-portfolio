@@ -8,7 +8,7 @@
     flex-direction: column;
     gap: 0.5rem;
     &-item {
-      font-size: 1.4rem;
+      font-size: var(--tlarge2);
       transition: 0.3s ease-in-out;
       display: flex;
       justify-content: center;
@@ -42,5 +42,11 @@
       margin: 0px auto;
       background-color: var(--light-slate);
     }
+  }
+  @media screen and (max-width: 1080px) {
+    left: 2rem;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }

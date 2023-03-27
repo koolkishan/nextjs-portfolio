@@ -10,7 +10,7 @@
     text-decoration: none;
     color: var(--light-slate);
     font-family: var(--fira-code);
-    font-size: 15px;
+    font-size: var(--tsm2);
     letter-spacing: 0.1rem;
     margin-bottom: 20px;
     outline: 2px dashed transparent;
@@ -30,5 +30,11 @@
     height: 90px;
     margin: 0px auto;
     background-color: var(--light-slate);
+  }
+  @media screen and (max-width: 1080px) {
+    right: 2rem;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }

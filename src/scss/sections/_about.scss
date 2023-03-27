@@ -1,12 +1,12 @@
 .about {
-  margin: 15rem;
+  margin: 15rem 0;
   .title {
     font-family: var(--raleway);
     color: var(--lightest-slate);
     position: relative;
     h2 {
       margin-bottom: 2rem;
-      font-size: 2rem;
+      font-size: var(--tx2large);
       font-weight: 700;
       &::before {
         counter-increment: title;
@@ -37,7 +37,7 @@
       &-text {
         color: var(--slate);
         margin-right: 10%;
-        font-size: 18px;
+        font-size: var(--tlarge);
         letter-spacing: 0.07rem;
         line-height: 1.6rem;
         font-weight: 500;
@@ -52,7 +52,7 @@
           font-family: var(--raleway);
           line-height: 1.6rem;
           font-weight: 500;
-          font-size: 16px;
+          font-size: var(--tbase);
           color: var(--slate);
           position: relative;
           &::before {
@@ -102,11 +102,88 @@
         border-radius: 0.2rem;
         transition: 0.3s ease-in-out;
       }
-      img {
-        z-index: 0;
-        filter: grayscale(100%);
-        transition: 0.3s ease-in-out;
-        border-radius: 0.2rem;
+      &-container {
+        position: relative;
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+        img {
+          z-index: 0;
+          filter: grayscale(100%);
+          transition: 0.3s ease-in-out;
+          border-radius: 0.2rem;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1080px) {
+    &-grid {
+      &-photo {
+        .overlay {
+          height: 223px;
+          width: 223px;
+        }
+        &-container {
+          height: 223px;
+          width: 223px;
+        }
+      }
+      &-info {
+        &-list {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .title {
+      h2 {
+        &::after {
+          width: 200px;
+        }
+      }
+    }
+    &-grid {
+      &-photo {
+        margin-top: 3rem;
+        .overlay {
+          height: 300px;
+          width: 300px;
+        }
+        &-container {
+          height: 300px;
+          width: 300px;
+        }
+      }
+      &-info {
+        &-text {
+          margin-right: 0;
+        }
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .title {
+      h2 {
+        &::after {
+          width: 100px;
+        }
+      }
+    }
+    &-grid {
+      &-photo {
+        .overlay {
+          height: 223px;
+          width: 223px;
+        }
+        &-container {
+          height: 223px;
+          width: 223px;
+        }
       }
     }
   }
