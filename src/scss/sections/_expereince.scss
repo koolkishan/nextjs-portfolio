@@ -125,6 +125,7 @@
     }
   }
   @media screen and (max-width: 600px) {
+    margin: 5rem auto;
     .container {
       grid-template-columns: 1fr;
       padding: 1rem;
