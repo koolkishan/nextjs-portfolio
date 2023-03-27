@@ -15,7 +15,7 @@ function Contact() {
         hidden: { opacity: 0, y: 0 },
       }}
     >
-      <h2 className="contact-title">What's Next?</h2>
+      <h2 className="contact-title">What&apos;s Next?</h2>
       <h2 className="contact-sub-title">Get In Touch</h2>
       <p className="contact-text">
         Although I’m not currently looking for any new opportunities, my inbox

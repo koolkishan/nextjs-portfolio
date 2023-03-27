@@ -4,12 +4,11 @@ import { motion } from "framer-motion";
 function Experience() {
   const [selected, setSelected] = useState(0);
 
-  const transformSelected = () => {
-    const underline = document.querySelector(".underline");
-    underline.style.top = `${selected * 2.5}rem`;
-  };
-
   useEffect(() => {
+    const transformSelected = () => {
+      const underline = document.querySelector<HTMLElement>(".underline");
+      underline!.style.top = `${selected * 2.5}rem`;
+    };
     transformSelected();
   }, [selected]);
 
@@ -89,7 +88,7 @@ function Experience() {
       }}
     >
       <div className="title">
-        <h2>Where I've Worked</h2>
+        <h2>Where I&apos;ve Worked</h2>
       </div>
       <div className="container">
         <ul className="exp-slider">
